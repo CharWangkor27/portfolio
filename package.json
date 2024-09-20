@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "lint": "eslint .",
