@@ -1,0 +1,73 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(45, 41, 41, 0.83);
+  padding: 20px;
+  position: relative;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+}
+.nav-connect {
+  padding: 10px 30px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-connect:hover {
+  transform: scale(1.05);
+}
+
+.nav-menu img {
+  width: 50px;
+  height: auto;
+  position: absolute;
+}
+.nav-menu li {
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.anchor-link {
+  text-decoration: none;
+  color: white;
+}
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(45, 41, 41, 0.9);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 30%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-connect {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
