@@ -83,3 +83,26 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 425px) {
+  .footer {
+    width: 140%;
+    gap: 20px;
+    margin: 40px 60px;
+  }
+}
+@media (max-width: 375px) {
+  .footer {
+    width: 160%;
+    gap: 20px;
+    margin: 10px 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer {
+    width: 180%;
+    gap: 20px;
+    margin: 5px 12px;
+  }
+}

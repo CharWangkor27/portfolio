@@ -56,6 +56,10 @@
 .hero-resume:hover {
   border-color: #b923e1;
 }
+.hero-resume a {
+  text-decoration: none;
+  color: white;
+}
 
 @media (max-width: 768px) {
   .hero h1 {
@@ -81,5 +85,24 @@
   .hero-resume {
     padding: 10px 20px;
     border-radius: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero {
+    width: 160%;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero {
+    width: 180%;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero {
+    width: 210%;
   }
 }

@@ -46,19 +46,23 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    width: 98%;
+  }
   .nav-menu {
     display: none;
     flex-direction: column;
     gap: 15px;
     background-color: rgba(45, 41, 41, 0.9);
     position: absolute;
-    top: 60px;
+    top: 15px;
     right: 0;
     width: 30%;
     height: 70vh;
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease-in-out;
+    z-index: -1;
   }
   .nav-menu.open {
     display: flex;
@@ -69,5 +73,23 @@
   }
   .hamburger {
     display: flex;
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar {
+    width: 158%;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar {
+    width: 163%;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar {
+    width: 190%;
   }
 }

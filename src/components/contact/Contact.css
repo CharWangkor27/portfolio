@@ -169,3 +169,29 @@
     padding: 8px 20px;
   }
 }
+
+@media (max-width: 425px) {
+  .contact {
+    width: 140%;
+  }
+  .contact-right input {
+    width: 80%;
+    font-size: 20px;
+  }
+  .contact-right textarea {
+    width: 80%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact {
+    width: 160%;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact {
+    width: 180%;
+  }
+}

@@ -124,6 +124,7 @@
   background-image: linear-gradient(45deg, #222915, #1c2122);
   transform: scale(1.05);
   transition: 0.5s;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -158,5 +159,25 @@
   .services-container {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .services {
+    width: 125%;
+  }
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 375px) {
+  .services {
+    width: 140%;
+  }
+}
+
+@media (max-width: 320px) {
+  .services {
+    width: 160%;
   }
 }
